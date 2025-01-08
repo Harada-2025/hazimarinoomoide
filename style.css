@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#wrap {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #fa8072;
+  color: #FFFFF0;
+  padding: 20px;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-menu {
+  background: #fa8072;
+  color: #FFFFF0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu ul li a {
+  color: #FFFFF0;
+  display: block;
+  padding: 10px 20px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+.main-menu ul li a :hover {
+  color: #FFFFF0;
+}
+
+head {
+  background-color: #fa8072;
+  color: #333631;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.green {
+  color: #228b22;
+  
+}
+
+.back {
+  background-image: url(images/index.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+  background-color: #898880;
+  border-radius: 20px;
+  display: grid;
+  place-content: center;
+  place-items: center; 
+  color: #FFFFF0;
+  margin: 20px;
+}
+
+main {
+  display: flex;
+  background-color: #FFFFF0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  min-height: 100%;
+  /* padding: 20px; */
+}
+
+iframe{
+  display: flex;
+  aspect-ratio: 16 / 9;
+}
+
+figure {
+  width: 100%
+}
+
+.pic1{
+    border-radius: 5%;
+}
+
+.pic1 img{
+    object-fit: cover; /* 画像をコンテナ内に収める（縦横比を維持しながら） */
+    border-radius: 8px;
+}
+
+.border-inline {
+  text-decoration:underline dashed #ffe4c4;
+  padding-bottom: 5px
+  /*display: inline-block;
+  border-bottom: 3px dashed #ffe4c4;
+  padding-bottom: 5px;*/
+  
+
+}
+
+.flex{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ffdacc; padding: 20px;
+  
+}
+
+.flex .pic1 img{
+  /* 幅・高さを具体的に指定する */
+  width : calc(800px * 0.25);
+  height: calc(800px * 0.25);
+  position: relative;
+}
+
+.flex .right {
+  flex-direction:row
+}
+
+
+.sec01 {
+  background-color: #fff7e6;
+
+}
+
+.sec02 {
+  background: #FFFFF0; 
+}
+
+section {
+  background: #FFFFF0;
+  flex: 3;
+  padding: 50px;
+  /*margin-bottom: 20px;*/
+  color: #333631;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  letter-spacing: 0.1em;
+  
+  
+  
+}
+
+.h201 {
+ color: #fa8072;
+ background: #ffe4c4;
+ display:inline-block; 
+ padding:15px; 
+ border-radius: 10px;
+
+}
+
+.h301 {
+  color: #fa8072;
+
+}
+
+.h401 {
+  color: #fa8072;
+
+}
+
+.btn{
+  display: inline-block;
+  background-color: #ffe4c4;
+  border-radius: 10px;
+  padding: 15px;
+
+  
+}
+
+p{
+  max-width: 900px
+}
+
+ul{
+  list-style-type: circle;
+}
+
+article {
+
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333631;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  
+}
+
+main p {
+  /* background: #FFFFF0; */
+  /* padding: 20px; */
+  /* color: #333631; */
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+aside {
+  background: #FFFFF0;
+  flex: 1;
+}
+
+.sub-menu {
+  background: #FFFFF0;
+  ;
+}
+
+.sub-menu ul li a {
+  color: #FFF;
+  display: block;
+  padding: 10px 20px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.sub-menu ul li a:hover {
+  background: #666;
+}
+
+footer {
+  background: #FFFFF0;
+  color: #898880;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  bottom: 20px;
+}
+
+article img {
+  max-width: 600px;
+
+  display: block;
+
+  box-sizing: border-box;
+}
+
+
+
+a {
+  color: inherit;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fa8072;
+}
+
+a:visited {
+  color: #FFFFF0;
+}
+
+a.pagetop {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12px;
+  border-radius: 25px;
+  background-color: #fa8072;
+  color: #FDF5E6;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gallery img {
+  width: auto;
+  height: auto;
+  max-width:100%
+}
+
+html,
+body {
+  height: 100%;
+  background: #FFFFF0;
+}
+
+
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  .flex {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-menu ul li {
+  text-align: center;
+}
+
+main {
+  display: block;
+  flex-direction: unset;
+}
+
+.sub-menu ul li {
+  text-align: center;
+}
+
+
+@media (max-width:767px) {
+  .row {
+    flex-direction: column;
+  }
+}
